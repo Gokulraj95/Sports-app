@@ -1,0 +1,19 @@
+<div *ngIf="sport" class="container">
+    <img [src]="sport.imageUrl" [alt]="sport.name"/>
+  
+    <div class="details">
+      <div class="header">
+        <span class="name">
+          {{sport.name}}
+        </span>
+
+        <div class="price">
+            <span>
+              {{sport.price | currency}}
+            </span>
+          </div>
+
+           <button (click)="addToCart()">Add To Cart</button> -->
+          
+    </div>
+</div>

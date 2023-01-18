@@ -1,0 +1,24 @@
+ <app-search></app-search>
+<!-- <app-tags></app-tags>
+<app-not-found
+[visible]="!foods || !foods.length"
+resetLinkText="Reset Search">
+</app-not-found> -->
+<ul>
+  <li *ngFor="let sport of sports">
+     <a routerLink="/sport/{{sport.id}}"> 
+      <img [src]="sport.imageUrl" [alt]="sport.name" /> 
+
+      <div class="content">
+        <div class="name">
+          {{sport.name}}
+        </div>
+        <div class="price">
+          <span>
+            {{sport.price | currency}}
+          </span>
+        </div>
+      </div>
+     </a> 
+  </li>
+</ul>
