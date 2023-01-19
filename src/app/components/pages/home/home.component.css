@@ -1,6 +1,6 @@
 ul{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-wrap: wrap;
     list-style-type: none;

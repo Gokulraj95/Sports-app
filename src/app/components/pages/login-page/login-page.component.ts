@@ -11,6 +11,7 @@ export class LoginPageComponent implements OnInit {
 
   username:string | undefined;
   password:string | undefined;
+  warning:string | undefined;
   
 
   constructor(private router: Router){}
@@ -24,6 +25,7 @@ if( this.username == `admin` && this.password == `admin`){
 this.router.navigateByUrl('home');
 console.log("login working");
 
-} else{ console.log(" login fail")}}
+} else{ console.log(" login fail")
+this.warning = 'Please enter a valid username and/or password'}}
 
 }

@@ -11,6 +11,13 @@ import { SportPageComponent } from './components/pages/sport-page/sport-page.com
 import { CheckoutPageComponent } from './components/pages/checkout-page/checkout-page.component';
 import { LoginPageComponent } from './components/pages/login-page/login-page.component';
 import { FirstPageComponent } from './components/pages/first-page/first-page.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule} from '@angular/material/card';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -26,7 +33,14 @@ import { FirstPageComponent } from './components/pages/first-page/first-page.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    FlexLayoutModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatCardModule,
+    MatToolbarModule,
+    MatButtonModule
 
   ],
   providers: [SportsService],
