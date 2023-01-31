@@ -6,19 +6,18 @@
 <nav>
     <ul>
         <li>
-            <a routerLink="/login"> Login</a>
+            <a routerLink="/login"> Logout</a>
         </li>
         <li class="item-container">
             <a routerLink="/dashboard">Admin</a>
             <div class="menu">
                 <a routerLink = "/profile">Profile</a>
                 <a routerLink = "/orders">Orders</a>
-                <a>Logout</a>
             </div>
         </li>
         <li>
             <a routerLink="/cart-page">Cart
-                <span>3</span>
+                <span>{{cartQuantity}}</span>
             </a>
 
         </li>

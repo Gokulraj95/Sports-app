@@ -10,7 +10,6 @@ import { SearchComponent } from './components/partials/search/search.component';
 import { SportPageComponent } from './components/pages/sport-page/sport-page.component';
 import { CheckoutPageComponent } from './components/pages/checkout-page/checkout-page.component';
 import { LoginPageComponent } from './components/pages/login-page/login-page.component';
-import { FirstPageComponent } from './components/pages/first-page/first-page.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
@@ -28,7 +27,7 @@ import {MatButtonModule} from '@angular/material/button';
     SportPageComponent,
     CheckoutPageComponent,
     LoginPageComponent,
-    FirstPageComponent
+   
   ],
   imports: [
     BrowserModule,
